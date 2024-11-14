@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="women.html">WOMEN</a>
+                            <div class="dropdown-content">
+                                <h3>Women Ethnic & Western Wear</h3>
+                                <a href="">Tops</a>
+                                <a href="">Dresses</a>
+                                <a href="">Jeans</a>
+                                <a href="">T-shirts</a>
+                                <a href="">Kurtas</a>
+                                <a href="">Kurta Sets</a>
+                            </div>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="men.html">MEN</a>
+                            <div class="dropdown-content">
+                                <h3>Topwear</h3>
+                                <a href="">Shirts</a>
+                                <a href="">Tshirts</a>
+                                <a href="">Jeans</a>
+                                <a href="">Track Pants</a>
+                                <a href="">Men Kurtas</a>
+                                <a href="">Casual Shoes</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="kids.html">KIDS</a>
+                            <div class="dropdown-content">
+                                <h3>Boys & Girls</h3>
+                                <a href="">Boys Shirts</a>
+                                <a href="">Girls Frocks</a>
+                                <a href="">Jeans</a>
+                                <a href="">Rompers</a>
+                                <a href="">Toys & Accessories</a>
+
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="beauty.html">BEAUTY</a>
+                            <div class="dropdown-content">
+                                <h3>Make up</h3>
+                                <a href="">Face </a>
+                                <a href=""> Eyes</a>
+                                <a href="">Lips</a>
+                                <a href="">Nails</a>
+                                <a href="">Perfumes</a>
+                                <a href="">Deodorants</a>
+                            </div>
+                        </li>
+
+                        <li><a href="account.html" class="active">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Account Page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/upcoming.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="Logform" onsubmit="validateLogin(event)">
+                            <input type="text" id="login-usrname" placeholder="Username">
+                            <input type="password" id="login-pwd" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
+                        <form id="Regform" onsubmit="validateRegister(event)">
+                            <input type="text" id="reg-usrname" placeholder="Username">
+                            <input type="email" id="reg-email" placeholder="Email">
+                            <input type="password" id="reg-pwd" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>EXPERIENCE PANTALOONS APP</h3>
+                    <p>Download App for Android and ios mobile</p>
+                    <div class="app-logo">
+                        <a href="https://apps.apple.com/in/app/pantaloons-online-shopping-app/id1599439483">
+                            <img src="images/app store.jpeg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.pantaloons&hl=en_IN">
+                            <img src="images/google play.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.jpeg" alt="">
+                    <p>Our purpose is to Android and ios mobile </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>EASY RETURNS</li>
+                        <li>FREE SHIPPING</li>
+                        <li>CASH ON DELIVERY</li>
+                        <li>SECURE PAYMENT </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram </li>
+                        <li>Twitter</li>
+                        <li>YouTube </li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright-Pantaloons.com</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- JS for toggle Menu -->
+    <script>
+
+        var loginForm = document.getElementById("Logform");
+        var RegForm = document.getElementById("Regform");
+        var Indicator = document.getElementById("indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+
+        }
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+        // Function to clear form fields
+        function clearFormFields(form) {
+            form.reset();
+        }
+
+        // Function to validate login form
+
+        function validateLogin(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("login-usrname").value;
+            var password = document.getElementById("login-pwd").value;
+
+            if (username === '' || password === '') {
+                alert("Please fill in all fields!");
+                return false; //prevent form submission
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            alert("Login Successful");
+
+            clearFormFields(loginForm);
+            return true;
+        }
+
+        // Function to validate register form
+        function validateRegister(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("reg-usrname").value;
+            var email = document.getElementById("reg-email").value;
+            var password = document.getElementById("reg-pwd").value;
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (username === '' || email === '' || password === '') {
+                alert("Please fill in all fields!");
+                return false;
+            }
+
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address!");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            alert("Registration Successful");
+            clearFormFields(RegForm);
+            return true;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
